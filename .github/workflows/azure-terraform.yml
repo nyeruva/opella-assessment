@@ -50,12 +50,12 @@ jobs:
         run: terraform apply -auto-approve tfplan --var-file dev.tfvars
 
   Deploy_to_Production:
+    runs-on: ubuntu-latest
     env:
       TARGET_ENVIRONMENT: production # Set to "Yes" to Deploy Infra to develeopment environment
 
-    if: ${{ env.TARGET_ENVIRONMENT == 'production' }} # Job only runs if DEPLOY_ENV is 'production'
+    if: env.TARGET_ENVIRONMENT == 'production' # Job only runs if TARGET_ENVIRONMENT is 'production'
 
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
