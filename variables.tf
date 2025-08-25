@@ -9,3 +9,4 @@ variable "nsg" {}
 variable "vm_name" {}
 variable "username" {}
 variable "bastion_address_prefix" {}
+variable "subscription_id" {}

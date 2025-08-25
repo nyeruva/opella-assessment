@@ -10,4 +10,5 @@ terraform {
 
 provider "azurerm" {
   features {} # Required block for the AzureRM provider
+  subscription_id = var.subscription_id
 }

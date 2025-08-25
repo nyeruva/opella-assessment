@@ -9,4 +9,4 @@ nsg                    = "Dev_NSG"
 vm_name                = "Dev"
 username               = "azureuser"
 bastion_address_prefix = ["10.0.4.0/27"]
-
+subscription_id        = "65202cdd-c444-4698-affc-6966473ed118"
