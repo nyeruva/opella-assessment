@@ -1,0 +1,12 @@
+rg_name                = "Dev-env-RG"
+rg_location            = "East US"
+vnet_name              = "dev_vnet"
+vnet_address_space     = ["10.0.0.0/16"]
+vnet_subnet_prefixes   = ["10.0.1.0/24"]
+environment            = "Dev"
+team                   = "IT Team"
+nsg                    = "Dev_NSG"
+vm_name                = "Dev"
+username               = "azureuser"
+bastion_address_prefix = ["10.0.4.0/27"]
+

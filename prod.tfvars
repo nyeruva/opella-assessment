@@ -1,0 +1,11 @@
+rg_name                = "Prod-env-RG"
+rg_location            = "West US"
+vnet_name              = "prod_vnet"
+vnet_address_space     = ["192.168.0.0/16"]
+vnet_subnet_prefixes   = ["192.168.1.0/24"]
+environment            = "Prod"
+team                   = "IT Team"
+nsg                    = "Prod_NSG"
+vm_name                = "Prod"
+username               = "azureuser"
+bastion_address_prefix = ["192.168.4.0/27"]

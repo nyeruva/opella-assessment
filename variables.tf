@@ -1,0 +1,11 @@
+variable "rg_name" {}
+variable "rg_location" {}
+variable "vnet_name" {}
+variable "vnet_address_space" {}
+variable "vnet_subnet_prefixes" {}
+variable "environment" {}
+variable "team" {}
+variable "nsg" {}
+variable "vm_name" {}
+variable "username" {}
+variable "bastion_address_prefix" {}
