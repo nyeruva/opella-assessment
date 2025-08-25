@@ -16,8 +16,8 @@ on:
     # Make sure you added your credentials
 
 #Control deployment to environments based on environment varilable.
-env:
-  TARGET_ENVIRONMENT: "production" # Set to "Yes" to Deploy Infra to develeopment environment
+#env:
+#  TARGET_ENVIRONMENT: "production" # Set to "Yes" to Deploy Infra to develeopment environment
 
 jobs:
   Deploy_to_Development:
@@ -53,7 +53,7 @@ jobs:
 
   Deploy_to_Production:
     runs-on: ubuntu-latest
-    if: ${{ env.TARGET_ENVIRONMENT == 'production' }} # Job only runs if TARGET_ENVIRONMENT is 'production'
+    if: ${{ vars.TARGET_ENVIRONMENT == 'production' }} # Job only runs if TARGET_ENVIRONMENT is 'production'
 
     steps:
       - uses: actions/checkout@v4
