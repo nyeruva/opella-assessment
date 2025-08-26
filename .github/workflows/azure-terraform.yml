@@ -15,10 +15,6 @@ on:
     # Declared environment variable to authenticate to Azure via GitHub Actions
     # Make sure you added your credentials
 
-#Control deployment to environments based on environment varilable.
-env:
-  TARGET_ENVIRONMENT: "production" # Set to "Yes" to Deploy Infra to develeopment environment
-
 jobs:
   Deploy_to_Development:
     runs-on: ubuntu-latest
@@ -53,8 +49,6 @@ jobs:
 
   Deploy_to_Production:
     runs-on: ubuntu-latest
-    if: $TARGET_ENVIRONMENT == 'production' # Job only runs if TARGET_ENVIRONMENT is 'production'
-
     steps:
       - uses: actions/checkout@v4
 
