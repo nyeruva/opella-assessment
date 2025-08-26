@@ -5,15 +5,13 @@ name: Azure Infra Deployment to multiple environments using Terraform
 #Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
-  # push:
-  #   branches: ["master"]
-  # pull_request:
-  #   branches: ["master"]
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    # Declared environment variable to authenticate to Azure via GitHub Actions
-    # Make sure you added your credentials
 
 jobs:
   Deploy_to_Development:
