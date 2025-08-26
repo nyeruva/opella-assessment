@@ -53,6 +53,7 @@ jobs:
 
   Deploy_to_Production:
     runs-on: ubuntu-latest
+    environment: Production
     if: ${{ vars.TARGET_ENVIRONMENT == 'production' }} # Job only runs if TARGET_ENVIRONMENT is 'production'
 
     steps:
